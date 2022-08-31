@@ -10,7 +10,6 @@
 namespace Screen
 {
     extern RGB**pixels;
-    void rescale();
     void init();
     void display();
 }

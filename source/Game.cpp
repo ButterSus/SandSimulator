@@ -5,13 +5,14 @@
 #include "Game.h"
 #include "Screen.h"
 #include "Keyboard.h"
-#include <GL/freeglut.h>
+#include "Block.h"
 #include "RGB.h"
 
 namespace Game
 {
+    Block**world;
+
     Settings settings = {
-            .scale = 4,
             .height = 720,
             .width = 720,
             .title = "undefined",

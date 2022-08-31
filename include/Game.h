@@ -6,16 +6,16 @@
 #define SANDSIMULATOR_GAME_H
 
 #include <string>
+#include "Block.h"
 #include "RGB.h"
-
-#define SCALED(x) (int(std::ceil((float)x / Game::settings.scale)))
 
 using std::string;
 
 namespace Game
 {
+    extern Block**world;
+
     struct Settings {
-        float scale;
         int height;
         int width;
         string title;
